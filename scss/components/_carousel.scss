@@ -1,0 +1,53 @@
+.carousel {
+  width: 384px;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 280px 19px;
+  grid-row-gap: 21px;
+}
+.slick-list {
+  grid-area: 1 / 1 / span 1 / span 3;
+}
+
+.slick-dots {
+  bottom: -36px !important;
+  text-align: right !important;
+  li {
+    width: 40px !important;
+    height: 8px !important;
+    border-radius: 8px;
+    background: #e5e5e5;
+    &.slick-active {
+      background: #daa520;
+    }
+
+    button:before {
+      display: none;
+    }
+  }
+}
+
+.arrow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+.arrow-previous {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+.arrow-next {
+  grid-area: 2 / 3 / span 1 / span 1;
+  justify-content: end;
+}
+.arrow-text {
+  font-family: 'Nunito-SemiBold';
+  font-size: 14px;
+  color: #3e3f43;
+}
+
+@media screen and (max-width: $tablet) {
+  .slick-dots {
+    text-align: center !important;
+  }
+}

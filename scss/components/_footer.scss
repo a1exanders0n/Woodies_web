@@ -1,0 +1,142 @@
+.footer {
+  background-image: url('../img/footer_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 455px;
+  color: #fff;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 52px;
+  align-items: flex-end;
+  margin-left: 100px;
+  margin-top: 34px;
+  padding-top: 24px;
+  width: 708px;
+  border-top: 1px solid #c4c4c4;
+  &-link {
+    color: #8d8d8d;
+    text-decoration: none;
+    font-family: 'Nunito-Regular';
+    font-size: 14px;
+  }
+  &-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    list-style: none;
+  }
+  &-item {
+    color: #333333;
+    font-family: 'Nunito-SemiBold';
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+#copyright {
+  font-family: 'Nunito-SemiBold';
+  text-align: center;
+  font-size: 12px;
+  color: #8d8d8d;
+  padding-top: 45px;
+}
+
+.footer__subscribe {
+  display: flex;
+  height: 174px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  &-content {
+    width: 490px;
+  }
+  &-input {
+    display: flex;
+  }
+}
+
+#footer__subscribe-header {
+  font-family: 'Nunito-Bold';
+  font-size: 16px;
+  color: #000000;
+}
+
+#footer__subscribe-text {
+  font-family: 'Nunito-Regular';
+  font-size: 16px;
+  color: #000000;
+}
+
+#email {
+  font-family: 'Nunito-Regular';
+  font-size: 16px;
+  color: #afafaf;
+  width: 309px;
+  height: 38px;
+  background: #fff;
+  border: #daa520 solid 1px;
+  border-radius: 4px 0 0 4px;
+  padding-left: 16px;
+}
+
+#subscribeBtn {
+  font-family: 'Nunito-SemiBold';
+  font-size: 16px;
+  color: #ffffff;
+  width: 120px;
+  height: 40px;
+  background: #daa520;
+  border: transparent solid;
+  border-radius: 0 4px 4px 0;
+}
+
+@media screen and (max-width: $laptop) {
+  .footer__subscribe {
+    padding: 0 50px;
+  }
+  .footer__menu {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .footer {
+    &__menu {
+      margin: 0 10px;
+      border-top: none;
+    }
+    &__subscribe {
+      flex-direction: column;
+      height: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  #email {
+    width: 250px;
+  }
+  .footer {
+    height: auto;
+    padding-bottom: 24px;
+    &__subscribe {
+      padding: 10px;
+      &-content {
+        width: 384px;
+      }
+    }
+
+    &__menu {
+      justify-content: center;
+      width: auto;
+      &-column:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+}

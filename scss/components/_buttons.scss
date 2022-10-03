@@ -1,0 +1,40 @@
+.btn {
+  font-family: 'Nunito-Bold';
+  font-size: 16px;
+  width: 137px;
+  height: 40px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid #3e3f43;
+  border-radius: 8px;
+  &-furniture {
+    width: 175px;
+    height: 50px;
+    border: 1px solid #daa520;
+    border-radius: 4px;
+    background: #daa520;
+    color: #ffffff;
+  }
+  &-custom {
+    width: 212px;
+    height: 50px;
+    border: 1px solid #daa520;
+    border-radius: 4px;
+    background: #daa520;
+    color: #ffffff;
+  }
+  &-shop {
+    position: absolute;
+    bottom: 24px;
+    right: 16px;
+    font-family: 'Nunito-SemiBold';
+    font-size: 18px;
+    font-weight: 600;
+    width: 123px;
+    border-radius: 4px;
+  }
+}
+
+.menu__item .btn {
+  background: #f9bdbd;
+}

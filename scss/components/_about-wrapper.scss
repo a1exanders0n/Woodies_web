@@ -1,0 +1,100 @@
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  padding-left: 100px;
+}
+
+.about-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about--text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 450px;
+  &-top {
+    font-family: 'Nunito-ExtraBold';
+    font-size: 36px;
+    color: #3e3f43;
+
+    span {
+      font-family: 'Nunito-SemiBold';
+    }
+  }
+  &-bottom {
+    font-family: 'Nunito-SemiBold';
+    font-size: 24px;
+    color: #000000;
+  }
+  &-left {
+    max-width: 655px;
+  }
+  &-right {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .about-wrapper {
+    padding-left: 50px;
+  }
+  .about-top {
+    gap: 36px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .about-top {
+    img {
+      width: 45%;
+    }
+  }
+
+  .about--text-right {
+    padding-right: 50px;
+  }
+
+  .about--text-left {
+    max-width: 400px;
+  }
+
+  .about--text {
+    &-top {
+      font-size: 28px;
+    }
+    &-bottom {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .about-wrapper {
+    padding-left: 10px;
+  }
+  .about-top {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
+  .about-bottom {
+    flex-direction: column-reverse;
+  }
+  .about--text {
+    &-right {
+      padding-right: 10px;
+    }
+  }
+}

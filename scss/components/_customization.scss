@@ -1,0 +1,36 @@
+.customization {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.customization-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customization-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 24px 100px 64px 100px;
+}
+
+@media screen and (max-width: $laptop) {
+  .customization-grid {
+    padding: 24px 35px 64px 35px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .customization-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .customization-item {
+    width: 172px;
+  }
+}

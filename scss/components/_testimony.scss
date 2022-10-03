@@ -1,0 +1,84 @@
+.testimony-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+  padding-bottom: 120px;
+}
+.testimony-pic {
+  display: flex;
+  gap: 40px;
+
+  &-container {
+    width: 240px;
+    height: 320px;
+    border-radius: 120px 0 120px 0;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.15));
+  }
+}
+
+.feedback {
+  max-width: 384px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: left;
+  gap: 16px;
+  padding: 54px 16px;
+  border: 1px solid #a8dcec;
+  border-radius: 0 120px 0 120px;
+}
+.stars-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.customer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &--text {
+    display: flex;
+    flex-direction: column;
+  }
+  &-picture {
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.15));
+  }
+  &-name {
+    font-family: 'Nunito-SemiBold';
+    font-size: 12px;
+    color: #3e3f43;
+  }
+  &-location {
+    font-family: 'Nunito-SemiBold';
+    font-size: 12px;
+    color: #afafaf;
+  }
+}
+
+.feedback--text {
+  max-width: 352px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 14px;
+  color: #3e3f43;
+}
+
+@media screen and (max-width: $tablet) {
+  .testimony-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .testimony-wrapper {
+    flex-direction: column;
+  }
+  .testimony-pic {
+    flex-direction: column;
+    &-container {
+      width: 384px;
+      height: 512px;
+    }
+  }
+}

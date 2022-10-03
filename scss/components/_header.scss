@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 999;
+  padding: 20px 28px 20px 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__logo {
+  display: flex;
+  gap: 8px;
+  &-text {
+    font-family: 'Nunito-Bold';
+    font-size: 24px;
+    letter-spacing: 0.25em;
+    color: #3e3f43;
+  }
+  img {
+    width: 30px;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+  &__link {
+    color: rgba(34, 34, 34, 0.75);
+    text-decoration: none;
+    font-family: 'Nunito-Regular';
+    font-size: 16px;
+  }
+  &__item {
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .header {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .menu__item:not(:last-child) {
+    display: none;
+  }
+}
